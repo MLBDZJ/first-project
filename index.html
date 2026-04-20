@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马路边的座机 - 程序员个人网站</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">马路边的座机</a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#tech">技术栈</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#philosophy">技术理念</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 首页Hero部分 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">你好，世界！</h1>
+                <h2 class="hero-subtitle">我是<span class="highlight">马路边的座机</span>，一名热爱技术的程序员</h2>
+                <p class="hero-description">用代码解决实际问题，构建优雅、高效的软件系统</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">了解更多</a>
+                    <a href="#projects" class="btn btn-secondary">查看项目</a>
+                </div>
+            </div>
+            <div class="hero-code">
+                <pre><code class="language-python"># 我的技术宣言
+def build_solutions():
+    """用代码构建解决方案"""
+    while True:
+        problem = find_problem()
+        solution = design_solution(problem)
+        code = implement(solution)
+        test_and_deploy(code)
+        learn_and_improve()</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>你好！很高兴能在这里与你分享我的技术旅程。我是一名充满好奇心的软件工程师，热衷于用代码解决实际问题，构建优雅、高效的软件系统。</p>
+                    <p>我的编程生涯始于2026年，从那时起，我就被计算机科学的魅力深深吸引。对我来说，编程不仅仅是一份工作，更是一种创造和表达的方式——就像作家用文字讲述故事，画家用色彩描绘世界，而我用代码构建数字化的解决方案。</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>中国</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <span>全栈开发者</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-heart"></i>
+                            <span>FastAPI & 现代Web开发</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="2">0+</div>
+                        <div class="stat-label">项目经验</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="1000">0+</div>
+                        <div class="stat-label">代码提交</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="10">0+</div>
+                        <div class="stat-label">技术栈掌握</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术栈 -->
+    <section id="tech" class="section tech-stack">
+        <div class="container">
+            <h2 class="section-title">技术栈与专长</h2>
+            <div class="tech-categories">
+                <!-- 后端开发 -->
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> 后端开发</h3>
+                    <p>我特别钟情于现代、高性能的后端架构。<strong>FastAPI</strong> 是我目前最喜爱的 Python Web 框架——它的异步支持、自动文档生成和出色的性能让我在构建 RESTful API 时如鱼得水。</p>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <span class="tech-icon">⚡</span>
+                            <span class="tech-name">FastAPI</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🗄️</span>
+                            <span class="tech-name">SQLAlchemy</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🔐</span>
+                            <span class="tech-name">JWT & bcrypt</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🐘</span>
+                            <span class="tech-name">PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📊</span>
+                            <span class="tech-name">Pydantic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 前端技术 -->
+                <div class="tech-category">
+                    <h3><i class="fas fa-palette"></i> 前端技术</h3>
+                    <p>虽然我主要专注于后端，但我也熟悉现代前端技术栈，能够构建响应式、用户体验良好的界面。</p>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <span class="tech-icon">⚛️</span>
+                            <span class="tech-name">React</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🟢</span>
+                            <span class="tech-name">Vue.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📘</span>
+                            <span class="tech-name">TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">⚡</span>
+                            <span class="tech-name">Vite</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📦</span>
+                            <span class="tech-name">Webpack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 架构理念 -->
+                <div class="tech-category">
+                    <h3><i class="fas fa-sitemap"></i> 架构理念</h3>
+                    <p>我坚信<strong>前后端分离</strong>是构建现代 Web 应用的最佳实践。清晰的 API 契约、松耦合的架构设计，不仅提高了开发效率，也让系统更易于扩展和维护。</p>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <span class="tech-icon">🔗</span>
+                            <span class="tech-name">RESTful API</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🏗️</span>
+                            <span class="tech-name">微服务架构</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">☁️</span>
+                            <span class="tech-name">云原生</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🐳</span>
+                            <span class="tech-name">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目 -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">当前项目</h2>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>基于FastAPI的身份验证Web应用框架</h3>
+                    <div class="project-tags">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>目前，我正在和一位朋友合作开发一个<strong>基于身份验证的 Web 应用框架</strong>。这个项目从最基础的身份验证系统开始，逐步扩展为一个完整的应用平台。我们选择了 FastAPI 作为后端，采用了前后端分离的架构，目标是构建一个既安全又高效的系统。</p>
+
+                    <div class="project-focus">
+                        <h4><i class="fas fa-bullseye"></i> 特别关注</h4>
+                        <div class="focus-grid">
+                            <div class="focus-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <h5>安全性</h5>
+                                <p>实现完善的 JWT 认证和授权机制</p>
+                            </div>
+                            <div class="focus-item">
+                                <i class="fas fa-code"></i>
+                                <h5>代码质量</h5>
+                                <p>遵循最佳实践，编写可测试、可维护的代码</p>
+                            </div>
+                            <div class="focus-item">
+                                <i class="fas fa-book"></i>
+                                <h5>开发者体验</h5>
+                                <p>提供清晰的 API 文档和一致的接口设计</p>
+                            </div>
+                            <div class="focus-item">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <h5>可扩展性</h5>
+                                <p>设计灵活的架构以支持未来的功能扩展</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="project-note">这个项目对我们来说不仅是一次技术实践，更是一个学习如何协作、如何设计系统、如何平衡各种技术选择的过程。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术理念 -->
+    <section id="philosophy" class="section philosophy">
+        <div class="container">
+            <h2 class="section-title">技术理念</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3>代码即文档</h3>
+                    <p>我相信好的代码应该能够自我说明。清晰的命名、合理的结构、适当的注释——这些都是让代码"活"起来的关键。</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>测试驱动开发</h3>
+                    <p>虽然我不是严格的 TDD 实践者，但我坚信自动化测试的重要性。无论是单元测试、集成测试还是端到端测试，它们都是保障代码质量、减少回归错误的利器。</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>持续学习</h3>
+                    <p>技术世界日新月异，保持学习的热情和能力至关重要。我习惯定期阅读技术博客、参与开源项目、尝试新的工具和框架，不断提升自己的技术视野。</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>解决问题的艺术</h3>
+                    <p>对我来说，编程的本质是解决问题。无论是优化一个算法、设计一个架构，还是修复一个棘手的 bug，都需要清晰的思考、系统的分析和创造性的解决方案。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>如果你对我的技术分享感兴趣，或者想讨论任何技术话题，欢迎通过以下方式联系我：</p>
+
+                    <div class="contact-methods">
+                        <a href="https://github.com/MLBDZJ" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub: MLBDZJ</span>
+                        </a>
+                        <a href="mailto:2913152545@qq.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: 2913152545@qq.com</span>
+                        </a>
+                    </div>
+
+                    <div class="interests">
+                        <h4><i class="fas fa-heart"></i> 工作之外</h4>
+                        <p>除了编程，我还喜欢：</p>
+                        <ul class="interest-list">
+                            <li><i class="fas fa-book"></i> 阅读技术书籍、科幻小说、历史传记</li>
+                            <li><i class="fas fa-running"></i> 跑步、游泳、徒步——保持身体健康对长时间编程至关重要</li>
+                            <li><i class="fas fa-code-branch"></i> 开源贡献——偶尔会为一些感兴趣的项目贡献代码或文档</li>
+                            <li><i class="fas fa-pen-fancy"></i> 写作——在博客上分享技术心得和学习收获</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-quote">
+                    <blockquote>
+                        <p>"我们不只是写代码，我们在用代码塑造世界。"</p>
+                        <footer>—— 一名永远保持好奇心的程序员</footer>
+                    </blockquote>
+                    <div class="future-outlook">
+                        <h4><i class="fas fa-rocket"></i> 未来展望</h4>
+                        <ul>
+                            <li>深入探索<strong>微服务架构</strong>和<strong>云原生技术</strong></li>
+                            <li>了解更多关于<strong>系统设计</strong>和<strong>分布式系统</strong>的知识</li>
+                            <li>在<strong>开源项目</strong>中做出更有意义的贡献</li>
+                            <li>构建能够真正帮助用户的<strong>产品级应用</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 马路边的座机. 保留所有权利.</p>
+            <p>用 <i class="fas fa-heart"></i> 和 <i class="fas fa-code"></i> 构建</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
